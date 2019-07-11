@@ -1,2 +1,9 @@
-1.Check if used the same strategy(testjet,presence,test library,silicon nail test, etc) for the devices have the same part number.
+develop procedure:
+1.Get the required materials(CAD or geber, bom list, schematic, tester config, special requirements such as device(CPLD/EEPROM) programming);
+2.Transfer CAD to the board and board_xy files, and import the bom list to the board;
+3.Edit the board and board_xy, search the test library for the device(write a setup test library for that can't get the suitable test library)
+4.Adjust the tester config to suit your board(use the least pin card configuration according to the number of the test point);
+
+Tips
+1.Check if used the same strategy(testjet,presence,test library,silicon nail test, etc) for the devices have the same part number;
 2.Check if the test probes of the Frequence Device(OSC,Crystal,XTAL,etc),Programming Device and Bscan Device are installed in the bottom side.
